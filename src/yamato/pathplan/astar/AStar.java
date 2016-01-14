@@ -1,7 +1,7 @@
-package pathplan.astar;
+package yamato.pathplan.astar;
 
-import pathplan.AbstractHeuristicPathPlanner;
-import pathplan.FunctionEvaluation;
+import yamato.pathplan.AbstractHeuristicPathPlanner;
+import yamato.pathplan.FunctionEvaluation;
 
 import java.util.*;
 
@@ -128,7 +128,7 @@ public class AStar<T> extends AbstractHeuristicPathPlanner<T>{
         int distance = 0;
         //Pathの構成要素の各ノード間の距離を計算して合算
         for(int i=0; i<path.size()-1; i++){
-            distance += this.calcCost.calc(path.get(i+1), path.get(i));
+            distance += this.calcCost.calc(path.get(i), path.get(i+1));
         }
         return distance;
     }

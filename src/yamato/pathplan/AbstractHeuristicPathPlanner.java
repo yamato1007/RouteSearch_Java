@@ -1,4 +1,4 @@
-package pathplan;
+package yamato.pathplan;
 
 import java.util.*;
 /**

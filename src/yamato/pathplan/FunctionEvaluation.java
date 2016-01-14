@@ -1,4 +1,4 @@
-package pathplan;
+package yamato.pathplan;
 
 /**
  * Created by k13082kk on 2016/01/12.
