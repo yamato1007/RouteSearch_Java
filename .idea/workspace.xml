@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4f3ccc33-ce03-404c-8c66-7275a056e2cf" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/pathplan/AbstractHeuristicPathPlanner.java" afterPath="$PROJECT_DIR$/src/yamato/pathplan/AbstractHeuristicPathPlanner.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/pathplan/AbstractPathPlanner.java" afterPath="$PROJECT_DIR$/src/yamato/pathplan/AbstractPathPlanner.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/pathplan/FunctionEvaluation.java" afterPath="$PROJECT_DIR$/src/yamato/pathplan/FunctionEvaluation.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/pathplan/astar/AStar.java" afterPath="$PROJECT_DIR$/src/yamato/pathplan/astar/AStar.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AStarAlgorithm.iml" afterPath="$PROJECT_DIR$/RouteSearch.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/yamato/pathplan/astar/AStar.java" afterPath="$PROJECT_DIR$/src/yamato/pathplan/astar/AStar.java" />
     </list>
     <ignored path="AStarAlgorithm.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,7 +26,7 @@
     <favorites_list name="AStarAlgorithm" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -62,12 +61,14 @@
         <option value="$PROJECT_DIR$/src/pathplan/rtastar/RTAStar.java" />
         <option value="$PROJECT_DIR$/src/yamato/util/Tuple.java" />
         <option value="$PROJECT_DIR$/src/yamato/pathplan/rtastar/RTAStar.java" />
+        <option value="$PROJECT_DIR$/src/yamato/pathplan/astar/AStar.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
+    <option name="y" value="22" />
     <option name="width" value="1280" />
-    <option name="height" value="800" />
+    <option name="height" value="774" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -100,9 +101,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -219,12 +218,13 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Java" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="FullScreen" value="true" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
@@ -536,7 +536,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <frame x="0" y="22" width="1280" height="774" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -589,11 +589,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#711#712#0" expanded="true" />
-            <element signature="e#747#748#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -601,7 +596,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -609,12 +603,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#225#226#0" expanded="true" />
-            <element signature="e#259#260#0" expanded="true" />
-            <element signature="e#363#364#0" expanded="true" />
-            <element signature="e#396#397#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -622,15 +610,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/yamato/pathplan/AbstractHeuristicPathPlanner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.18620689">
-          <caret line="9" column="39" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -638,7 +617,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.2689655">
           <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -646,9 +624,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.22758621">
           <caret line="37" column="27" selection-start-line="37" selection-start-column="27" selection-end-line="37" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -656,19 +631,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.10344828">
           <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/yamato/pathplan/astar/AStar.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.22758621">
-          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#711#712#0" expanded="true" />
-            <element signature="e#747#748#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -676,17 +638,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.28965518">
           <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/yamato/pathplan/AbstractHeuristicPathPlanner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.19940916">
+          <caret line="9" column="39" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/yamato/pathplan/rtastar/RTAStar.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.0551724">
-          <caret line="51" column="22" selection-start-line="51" selection-start-column="22" selection-end-line="51" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.3353028">
+          <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/yamato/pathplan/astar/AStar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.31019202">
+          <caret line="40" column="5" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>

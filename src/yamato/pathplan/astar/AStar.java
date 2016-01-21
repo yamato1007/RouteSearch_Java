@@ -40,7 +40,7 @@ public class AStar<T> extends AbstractHeuristicPathPlanner<T>{
         //展開するリストの先頭にスタート地点を追加
         l1.add(from);
         //スタート地点からスタート地点へ行くパスはスタート時点そのもの
-        List startPath = new LinkedList<>();
+        List<T> startPath = new LinkedList<>();
         startPath.add(from);
         paths.put(from,startPath);
 
