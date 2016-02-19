@@ -29,8 +29,8 @@ public class AStar<T> extends AbstractHeuristicPathPlanner<T>{
     }
 
     @Override
-    public List<T> calc(T from, Collection<T> targets) {
-        //ノードと、そこへ行くための前のノードのMap
+    public Optional<List<T>> calc(T from, Collection<T> targets) {
+        //ノードと、そこへ行くためのパスのマップ
         Map<T,List<T>> paths = new HashMap<>();
         //展開するリスト。なお、評価値による昇順ソート済みとする
         List<T> l1 = new LinkedList<>();
@@ -57,7 +57,7 @@ public class AStar<T> extends AbstractHeuristicPathPlanner<T>{
                 //パスからスタート地点を削除
                 //パスは、ゴール地点からスタート地点に隣接するノードまでのリストである
                 path.remove(path.size()-1);
-                return path;
+                return Optional.of(path);
             }
 
             //隣接するノードを獲得
@@ -98,7 +98,8 @@ public class AStar<T> extends AbstractHeuristicPathPlanner<T>{
                     }
             );
         }
-        return null;
+        //探索失敗
+        return Optional.empty();
     }
 
     //パスが現地点を含まない時につかう評価関数

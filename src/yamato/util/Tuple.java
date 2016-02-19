@@ -11,4 +11,6 @@ public class Tuple<A,B>{
         this.fst = a;
         this.snd = b;
     }
+
+
 }

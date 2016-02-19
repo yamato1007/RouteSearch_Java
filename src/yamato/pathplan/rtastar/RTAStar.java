@@ -20,6 +20,7 @@ public class RTAStar<T> extends AbstractHeuristicPathPlanner<T>{
 
     /**
      * ヒューリスティック関数。
+     * 評価値の書き換えが必要なためHeuristicクラスでヒューリスティック値を実装
      */
     private Heuristic<T> heuristicMap;
 
@@ -37,14 +38,19 @@ public class RTAStar<T> extends AbstractHeuristicPathPlanner<T>{
     /**
      * RTA*アルゴリズムで最善の次のノードを返す
      * 返り値はリストとなるが、アルゴリズムの仕様上隣接するノード一つのみ格納されたリストを返すことになる
-     * @param from
-     * @param targets
-     * @return
+     * @param from 出発地点
+     * @param targets 目的地
+     * @return パス。正確には隣接した一つのノードのみからなるList。隣接するノードが一つもない場合計算失敗として空のOptionalを返す。
      */
     @Override
-    public List<T> calc(T from, Collection<T> targets) {
+    public Optional<List<T>> calc(T from, Collection<T> targets) {
         //ヒューリスティック関数に目的地を設定
         this.heuristicMap.setTargets(targets);
+
+        //現在地がゴールならば何も含まないリスト（パス）を返す
+        if(targets.contains(from)){
+            return Optional.of(new LinkedList<>());
+        }
 
         //現在地から隣接するノードを獲得
         Set<T> neighbors = super.getGraph().get(from);
@@ -59,7 +65,7 @@ public class RTAStar<T> extends AbstractHeuristicPathPlanner<T>{
                 secondNode = bestNode;
                 bestNode = new Tuple(neighbor, eval);
             }
-            //最善ではないが、次善の評価値より良い評価値が得られたら
+            //2番めに良い評価値が得られたら
             else if(secondNode == null || secondNode.snd > eval){
                 secondNode = new Tuple(neighbor, eval);
             }
@@ -71,9 +77,14 @@ public class RTAStar<T> extends AbstractHeuristicPathPlanner<T>{
 
 
         //最善のノードただひとつを持つリストを返す
-        List<T> path = new LinkedList<>();
-        path.add(bestNode.fst);
-        return path;
+        //隣接するノードがなかった場合bestNodeはNullなので、戻り値は空のOptionalになる
+        return Optional.ofNullable(bestNode).map(
+                (node) -> {
+                    List<T> path = new LinkedList<>();
+                    path.add(node.fst);
+                    return path;
+                }
+        );
     }
 
     /**

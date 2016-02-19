@@ -12,7 +12,7 @@ abstract public class AbstractPathPlanner<T> {
         this.graph = graph;
     }
 
-    abstract public List<T> calc(T from, Collection<T> targets);
+    abstract public Optional<List<T>> calc(T from, Collection<T> targets);
 
     public Map<T,Set<T>> getGraph(){
         return this.graph;
