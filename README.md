@@ -5,7 +5,7 @@
 IntelliJ IDEA 15 で開発
 
 ## 注訳
-A*Algorithm、及びRealTimeA*Algorithmを実装したが、コンパイルすら通してない。
+A\*Algorithm、及びRealTimeA\*Algorithmを実装したが、コンパイルすら通してない。
 
 正しく動く保証はない。
 
